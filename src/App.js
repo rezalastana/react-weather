@@ -113,17 +113,15 @@ function App() {
                         )}
                     </div>
                     {/* derajat */}
-                    <div className="flex justify-center mt-1 text-[70px] text-white">
+                    <div className="flex justify-center mt-1 text-[65px] text-white">
                         {/* Math.round({data && data.main.temp}) &deg; C */}
                         {/* panggil suhu */}
                         {data && data.main.temp}&deg; C
                     </div>
                     {/* min and max suhu */}
                     <div className="mt-[-10] text-white flex flex-col justify-center items-center">
-                        <div className="text-[40px] font-bold">
-                            {data && data.name}
-                        </div>
-                        <div className="text-[24px]">
+                        <div className="text-[40px]">{data && data.name}</div>
+                        <div className="text-[20px] mb-5">
                             {data && data.weather[0].description}
                             {/* HALLO */}
                         </div>
