@@ -40,7 +40,7 @@ function App() {
             // .then((datas) => setData(datas))
             .then((datas) => {
                 setData(
-                    datas.code === 404
+                    datas.cod === 404
                         ? { code: 404, message: "not found" }
                         : datas
                 );
@@ -56,7 +56,7 @@ function App() {
 
     // penggunaan {data && data.wheather} adalah pengecekan apakah ada data yang diambil dalam API, jika tidak maka tidak melakukan apa-apa
 
-    if (data && data.cod !== 404) {
+    if (data && data.cod === 200) {
         return (
             <div className="flex justify-center items-center m-2 md:mx-0 md:h-screen  font-poppins">
                 {/* jika data ada saat pencarian maka tampilkan, jika tidak tampilkan tulisan "your location not found" */}
@@ -196,8 +196,9 @@ function App() {
                             </svg>
                         </div>
                     </div>
-
-                    <div>Tidak ada data</div>
+                    <div className="flex justify-center items-center text-white text-3xl mt-56">
+                        Lokasi anda tidak ditemukan
+                    </div>
                 </div>
             </div>
         );
