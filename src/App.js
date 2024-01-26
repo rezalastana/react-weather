@@ -196,7 +196,7 @@ function App() {
                             </svg>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center text-white text-3xl mt-56">
+                    <div className="flex justify-center items-center text-white text-3xl mt-56 text-center">
                         Lokasi anda tidak ditemukan
                     </div>
                 </div>
