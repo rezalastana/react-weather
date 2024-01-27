@@ -116,7 +116,7 @@ function App() {
                     <div className="flex justify-center mt-1 text-[65px] text-white">
                         {/* Math.round({data && data.main.temp}) &deg; C */}
                         {/* panggil suhu */}
-                        {data && data.main.temp}&deg; C
+                        {data && Math.round(data.main.temp)}&deg; C
                     </div>
                     {/* min and max suhu */}
                     <div className="mt-[-10] text-white flex flex-col justify-center items-center">
